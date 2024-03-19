@@ -1,4 +1,4 @@
 # html-css
  Curso de HTML
 
- Estou aorendendo a crir sites e agora vou gerenciar meus repositorios 
+ Estou aprendendo a criar sites e agora vou gerenciar meus repositorios 
