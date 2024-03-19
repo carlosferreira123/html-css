@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+   <style>
+    
+    /*
+
+       # = Id
+       . = class
+       : = pseudo-class
+       :: = pseudo-element
+       > = clildren
+    */
+    
+    
+    
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    a {
+        color: brown;
+         text-decoration: none;
+    }
+
+    a:visited {
+        color: cadetblue;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    a:active {
+        color: rgb(0, 0, 0);
+    }
+    
+    .especial {
+        background-color: black;
+    color: brown;
+    }
+    
+    a::before {
+        content: '{Antes}';
+    }
+    
+    a::after {
+        content: '{depois}';
+        text-decoration: none;
+        font-weight: normal;
+        color: burlywood;
+    }
+   </style>
+
+
+
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li> <a href="https://github.com/">Repositorio Git hub</a> </li>
+        <li ><a href="https://www.youtube.com/" class="especial">Canal do Youtube</a></li>
+        <li> <a href="https://www.paletton.com/#uid=1000u0kllllaFw0g0qFqFg0w0aF">Site</a> </li>
+
+    </ul>
+</body>
+</html>
