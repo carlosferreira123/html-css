@@ -1,38 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-      body {
-        font-family: Arial, Helvetica, sans-serif;
-      }
-      table {
-        width: 500px;
-        border-collapse: collapse;
-      }
-      td, th {
-        border: 1px solid black;
-        padding: 10px;
-      }
-      thead, tfoot {
-        background-color: gray;
-        color: white;
-      }
-      caption {
-        font-size: 1.5em;
-        font-weight: bold;
-        padding: 10px;
-        background-color: rgb(196, 196, 196);
-      }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    table {
+      width: 500px;
+      border-collapse: collapse;
+      position: relative;
+    }
+    thead > tr > th {
+      position: sticky;
+      top: -1px;
+      background-color: #383838;
+    }
+
+    td, th {
+      border: 1px solid black;
+      padding: 10px;
+    }
+
+    thead, tfoot {
+      background-color: gray;
+      color: white;
+    }
+
+    caption {
+      font-size: 1.5em;
+      font-weight: bold;
+      padding: 10px;
+      background-color: rgb(196, 196, 196);
+    }
+  </style>
 </head>
+
 <body>
-   
+
   <h1>Uso de tabelas grandes</h1>
 
-    <!-- 
+  <!-- 
         Anatomia para tabelas grandes table
         table 
         thead
@@ -42,41 +54,170 @@
         TFOOT
         TR, TD, TH
     -->
-    <table>
-      <caption>
-        População das Unidades Federativas 
-      </caption>  
-         <thead>
-             <tr>
-                  <th>Estado</th>
-                  <th>População</th>
-             </tr>
-         </thead>
-         <tbody>
-              <tr>
-                <td>São Paulo</td>
-                <td>45 919 049</td>
-              </tr>
-              <tr>
-                <td>Minas Gerais</td>
-                <td>21 168 791</td>
-              </tr>
-               <tr>
-                   <td>Rio de janeiro</td>
-                   <td>17 256 876</td>
-                
-               </tr>
-         </tbody>
-         <tfoot>
-              <tr>
-                 <th>
-                    Total de habitantes
-                 </th>
-                 <td>
-                    56 654 656
-                 </td>
-              </tr>
-         </tfoot>
-    </table>
+  <table>
+    <caption>
+      População das Unidades Federativas
+    </caption>
+    <thead>
+      <tr>
+        <th scope="col">Estado</th>
+        <th scope="col" style="width:50px">População</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>São Paulo</td>
+        <td class="num">45 919 049</td>
+      </tr>
+      <tr>
+        <td>Minas Gerais</td>
+        <td class="num">21 168 791</td>
+      </tr>
+      <tr>
+        <td>Rio de janeiro</td>
+        <td class="num">17 256 876</td>
+
+      </tr>
+      <tr>
+        <td>Ceará</td>
+        <td class="num">9 557 071</td>
+      </tr>
+      <tr>
+        <td>Santa Catarina</td>
+        <td class="num">7 018 354</td>
+      </tr>
+      <tr>
+        <td>Alagoas</td>
+        <td class="num"> 3 337 357</td>
+
+      </tr>
+      <tr>
+        <td>São Paulo</td>
+        <td class="num">45 919 049</td>
+      </tr>
+      <tr>
+        <td>Minas Gerais</td>
+        <td class="num">21 168 791</td>
+      </tr>
+      <tr>
+        <td>Rio de janeiro</td>
+        <td class="num">17 256 876</td>
+
+      </tr>
+      <tr>
+        <td>Ceará</td>
+        <td class="num">9 557 071</td>
+      </tr>
+      <tr>
+        <td>Santa Catarina</td>
+        <td class="num">7 018 354</td>
+      </tr>
+      <tr>
+        <td>Alagoas</td>
+        <td class="num"> 3 337 357</td>
+
+      </tr>
+      <tr>
+        <td>São Paulo</td>
+        <td class="num">45 919 049</td>
+      </tr>
+      <tr>
+        <td>Minas Gerais</td>
+        <td class="num">21 168 791</td>
+      </tr>
+      <tr>
+        <td>Rio de janeiro</td>
+        <td class="num">17 256 876</td>
+
+      </tr>
+      <tr>
+        <td>Ceará</td>
+        <td class="num">9 557 071</td>
+      </tr>
+      <tr>
+        <td>Santa Catarina</td>
+        <td class="num">7 018 354</td>
+      </tr>
+      <tr>
+        <td>Alagoas</td>
+        <td class="num"> 3 337 357</td>
+
+      </tr>
+      <tr>
+        <td>São Paulo</td>
+        <td class="num">45 919 049</td>
+      </tr>
+      <tr>
+        <td>Minas Gerais</td>
+        <td class="num">21 168 791</td>
+      </tr>
+      <tr>
+        <td>Rio de janeiro</td>
+        <td class="num">17 256 876</td>
+
+      </tr>
+      <tr>
+        <td>Ceará</td>
+        <td class="num">9 557 071</td>
+      </tr>
+      
+    
+     
+      
+    </tbody>
+    <tfoot>
+      <tr>
+        <th scope="row">
+          Total de habitantes
+        </th>
+        <td class="num">
+          56 654 656
+        </td>
+      </tr>
+    </tfoot>
+  </table>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, iste! Dignissimos possimus ratione nobis, harum incidunt voluptatibus aut ut minima optio autem ad vel. Vero doloribus eum magni voluptate consequatur.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate consectetur ullam obcaecati tempore aut fuga quaerat at? Rem beatae ipsam magnam repellendus nostrum saepe minus. Praesentium omnis suscipit doloribus quae.
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos necessitatibus, ducimus eveniet eligendi error distinctio sed porro quidem omnis, iure quasi, ab asperiores commodi quae labore. Expedita veniam sapiente quis?
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam perferendis ab ipsa ea voluptatem optio, dolore quos fugiat? Hic excepturi magni dicta suscipit enim accusantium ducimus dolor porro doloribus voluptates.
+   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe vitae, quas iste, explicabo natus reiciendis ex maxime mollitia numquam animi quasi dicta. Quo unde delectus corrupti non reprehenderit quasi alias!
+  </p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, iste! Dignissimos possimus ratione nobis, harum incidunt voluptatibus aut ut minima optio autem ad vel. Vero doloribus eum magni voluptate consequatur.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate consectetur ullam obcaecati tempore aut fuga quaerat at? Rem beatae ipsam magnam repellendus nostrum saepe minus. Praesentium omnis suscipit doloribus quae.
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos necessitatibus, ducimus eveniet eligendi error distinctio sed porro quidem omnis, iure quasi, ab asperiores commodi quae labore. Expedita veniam sapiente quis?
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eveniet laborum molestiae amet adipisci voluptates at iusto, sint tempora ducimus placeat earum vel, magnam ea sapiente corrupti. Eveniet, repellendus. Quisquam.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate amet dignissimos vitae dicta accusantium, sint recusandae maxime. Totam itaque unde quisquam, atque sed, consequatur, quasi perspiciatis earum libero illum odit?
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic aliquam aperiam nam beatae consequuntur reprehenderit dolor enim neque similique, voluptatem commodi quas nemo distinctio dignissimos sint ut! Assumenda, maiores deserunt.
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt consequatur et amet nostrum quo fugit consequuntur ipsa alias, officia fugiat, dolore voluptatibus labore, officiis sed ipsum a corporis obcaecati excepturi.
+
+  </p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, iste! Dignissimos possimus ratione nobis, harum incidunt voluptatibus aut ut minima optio autem ad vel. Vero doloribus eum magni voluptate consequatur.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate consectetur ullam obcaecati tempore aut fuga quaerat at? Rem beatae ipsam magnam repellendus nostrum saepe minus. Praesentium omnis suscipit doloribus quae.
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos necessitatibus, ducimus eveniet eligendi error distinctio sed porro quidem omnis, iure quasi, ab asperiores commodi quae labore. Expedita veniam sapiente quis?
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eveniet laborum molestiae amet adipisci voluptates at iusto, sint tempora ducimus placeat earum vel, magnam ea sapiente corrupti. Eveniet, repellendus. Quisquam.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate amet dignissimos vitae dicta accusantium, sint recusandae maxime. Totam itaque unde quisquam, atque sed, consequatur, quasi perspiciatis earum libero illum odit?
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic aliquam aperiam nam beatae consequuntur reprehenderit dolor enim neque similique, voluptatem commodi quas nemo distinctio dignissimos sint ut! Assumenda, maiores deserunt.
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt consequatur et amet nostrum quo fugit consequuntur ipsa alias, officia fugiat, dolore voluptatibus labore, officiis sed ipsum a corporis obcaecati excepturi.
+
+  </p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, iste! Dignissimos possimus ratione nobis, harum incidunt voluptatibus aut ut minima optio autem ad vel. Vero doloribus eum magni voluptate consequatur.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate consectetur ullam obcaecati tempore aut fuga quaerat at? Rem beatae ipsam magnam repellendus nostrum saepe minus. Praesentium omnis suscipit doloribus quae.
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos necessitatibus, ducimus eveniet eligendi error distinctio sed porro quidem omnis, iure quasi, ab asperiores commodi quae labore. Expedita veniam sapiente quis?
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eveniet laborum molestiae amet adipisci voluptates at iusto, sint tempora ducimus placeat earum vel, magnam ea sapiente corrupti. Eveniet, repellendus. Quisquam.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate amet dignissimos vitae dicta accusantium, sint recusandae maxime. Totam itaque unde quisquam, atque sed, consequatur, quasi perspiciatis earum libero illum odit?
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic aliquam aperiam nam beatae consequuntur reprehenderit dolor enim neque similique, voluptatem commodi quas nemo distinctio dignissimos sint ut! Assumenda, maiores deserunt.
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt consequatur et amet nostrum quo fugit consequuntur ipsa alias, officia fugiat, dolore voluptatibus labore, officiis sed ipsum a corporis obcaecati excepturi.
+
+  </p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, iste! Dignissimos possimus ratione nobis, harum incidunt voluptatibus aut ut minima optio autem ad vel. Vero doloribus eum magni voluptate consequatur.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate consectetur ullam obcaecati tempore aut fuga quaerat at? Rem beatae ipsam magnam repellendus nostrum saepe minus. Praesentium omnis suscipit doloribus quae.
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos necessitatibus, ducimus eveniet eligendi error distinctio sed porro quidem omnis, iure quasi, ab asperiores commodi quae labore. Expedita veniam sapiente quis?
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eveniet laborum molestiae amet adipisci voluptates at iusto, sint tempora ducimus placeat earum vel, magnam ea sapiente corrupti. Eveniet, repellendus. Quisquam.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate amet dignissimos vitae dicta accusantium, sint recusandae maxime. Totam itaque unde quisquam, atque sed, consequatur, quasi perspiciatis earum libero illum odit?
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic aliquam aperiam nam beatae consequuntur reprehenderit dolor enim neque similique, voluptatem commodi quas nemo distinctio dignissimos sint ut! Assumenda, maiores deserunt.
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt consequatur et amet nostrum quo fugit consequuntur ipsa alias, officia fugiat, dolore voluptatibus labore, officiis sed ipsum a corporis obcaecati excepturi.
+
+  </p>
 </body>
+
 </html>
